@@ -36,7 +36,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	for (oil = 0; owner[oil]; oil++)
 		oil++;
-		dog->owner = $malloc(oil * sizeof(char));
+		dog->owner = malloc(oil * sizeof(char));
 
 		if (dog->owner == NULL)
 		{
@@ -45,9 +45,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 			return (NULL);
 
 	for (i = 0; i < oil; i++)
-
 		dog->owner[i] = owner[i];
-		return (dog);
+	return (dog);
 		}
 	}
 }
