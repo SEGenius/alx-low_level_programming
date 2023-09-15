@@ -35,7 +35,7 @@ void print_all(const char * const format, ...)
 				str = va_arg(a_list, char*);
 				if (str == NULL)
 				str = "(nil)";
-				printf("%d", *str);
+				printf("%s", *str);
 				flag = 0;
 				break;
 				default:
