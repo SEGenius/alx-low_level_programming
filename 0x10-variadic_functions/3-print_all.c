@@ -17,7 +17,7 @@ void print_all(const char * const format, ...)
 	i = 0;
 	while (format != NULL && format[i] != '\0')
 	{
-		switch (format[i]
+		switch (format[i])
 				{
 				case 'c':
 				printf("%c", va_arg(a_list, int));
@@ -35,7 +35,7 @@ void print_all(const char * const format, ...)
 				str = va_arg(a_list, char*);
 				if (str == NULL)
 				str = "(nil)";
-				printf("%s", str);
+				printf("%d", *str);
 				flag = 0;
 				break;
 				default:
@@ -46,6 +46,7 @@ void print_all(const char * const format, ...)
 			printf(", ");
 		i++;
 	}
+
 	printf("\n*");
 	va_end(a_list);
 }
