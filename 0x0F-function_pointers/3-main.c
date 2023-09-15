@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 
 		if (!oprt)
 		{
-			printf("Error\n")
+			printf("Error\n");
 				exit(99);
 		}
 
